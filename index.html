@@ -1,0 +1,63 @@
+<html>
+  <head>
+    <title>Calculator</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css" rel="stylesheet" />
+  </head>
+  <body>
+    <section class="section">
+        <div class="container">
+          <h1 class="title">
+            Data Binding Simple Example
+          </h1>
+          <div class="columns">
+  <div class="column">
+    Name
+  </div>
+  <div class="column">
+     {{name}}
+  </div>
+  <div class="column">
+  Country
+  </div>
+  <div class="column">
+  {{country}}
+  </div>
+  <div class="column">
+  Age
+  </div>
+  <div class="column">
+   {{age}}
+  </div>
+</div>
+        </div>
+      </section>
+<div class="container">
+    <p>
+    I am  {{name}} with {{age}} years old and born on   {{country}} <br /><br /><br />
+ </p>
+
+<h1 class="title">Form</h1>
+ <div class="field">
+  <label class="label">Name</label>
+  <div class="control">
+    <input class="input" type="text" data-modal="name" placeholder="Your Name">
+  </div>
+</div>
+<div class="field">
+ <label class="label">Country</label>
+ <div class="control">
+   <input class="input" type="text" data-modal="country" placeholder="Your Name">
+ </div>
+</div>
+<div class="field">
+ <label class="label">Age</label>
+ <div class="control">
+   <input class="input" type="text" data-modal="age" placeholder="Your Name">
+ </div>
+</div>
+</div>
+      <script src="databind.js"></script>
+
+
+  </body>
+</html>
